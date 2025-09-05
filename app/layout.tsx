@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import { notoSans, notoSansJP } from "@/font-config/fonts";
+import dayjs from "dayjs";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${notoSans.variable} ${notoSansJP.variable} bg-white text-black px-120 py-24`}
+        className={`${notoSans.variable} ${notoSansJP.variable} bg-white text-black px-8 md:px-24 lg:px-40 xl:px-56 2xl:px-72 py-24`}
       >
         {children}
       </body>
